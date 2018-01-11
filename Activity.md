@@ -29,3 +29,8 @@ Activity是Android应用中最基本的元素，直观来讲，可以与App使�
 onSaveInstanceState()的默认实现为根据id保存当前的View Hierarchy ( **Tips:给每个View还有ViewGroup分配一个id看起来是个好习惯** )，该方法默认会在onStop()之前调用，但是其和onPause()的调用关系具有随机性
 
 onSaveInstanceState()会把这些数据保存在一个Bundle中，后面在这个Activity被重建的时候，这个Bundle会被同时传递给onCreate()和onRestoreInstanceState(), 和onSaveInstanceState()相对的，onRestoreInstanceState()会在onStart()之后调用
+
+
+
+
+
